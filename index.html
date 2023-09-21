@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello World</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/custom.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <style>
+      .container {
+        color: #333;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        font-weight: normal;
+        letter-spacing: 0.125rem;
+        text-transform: uppercase;
+      }
+
+      li {
+        display: inline-block;
+        font-size: 1.5em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+      }
+
+      li span {
+        display: block;
+        font-size: 4.5rem;
+      }
+
+      .emoji {
+        display: none;
+        padding: 1rem;
+      }
+
+      .emoji span {
+        font-size: 4rem;
+        padding: 0 0.5rem;
+      }
+
+      /* @media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+} */
+    </style>
+  </head>
+
+  <body>
+
+    <header class="site-header">
+      <div class="header-bar">
+        <div class="container-fluid">
+          <div class="row align-items-center mt-5">
+
+            <div class="col-10 col-lg-2 order-lg-1">
+              <div class="site-branding">
+                 <div class="buy-tickets">
+                <a class="btn gradient-bg" href="#">Buy Tickets</a>
+              </div>
+                <!-- .site-title -->
+              </div>
+              <!-- .site-branding -->
+            </div>
+            <!-- .col -->
+
+            <div class="col-2 col-lg-7 order-3 order-lg-2">
+             
+              <!-- .site-navigation -->
+            </div>
+            <!-- .col -->
+
+            <div class="col-lg-3 d-none d-lg-block order-2 order-lg-3">
+              <nav class="site-navigation">
+                <div class="hamburger-menu d-lg-none">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <!-- .hamburger-menu -->
+
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- .col -->
+          </div>
+          <!-- .row -->
+        </div>
+        <!-- .container-fluid -->
+      </div>
+      <!-- .header-bar -->
+
+      </style>
+
+      <style>
+        /* Mobile Background */
+        @media (max-width: 767px) {
+          .swiper-slide {
+            background: url('images/banner.jpg') no-repeat;
+            background-size: cover;
+          }
+        }
+      
+        /* Desktop Background */
+        @media (min-width: 768px) {
+          .swiper-slide {
+            background: url('images/2.jpg') no-repeat;
+            background-size: cover;
+          }
+        }
+      </style>
+      
+
+       <div class="swiper-container hero-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background: url('images/banner.jpg') no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="hero-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col flex flex-column justify-content-center">
+                    <div class="entry-header">
+                      <div class="countdown flex align-items-center">
+                        <div class="countdown-holder flex align-items-baseline">
+                          <label></label>
+                        </div>
+                        <!-- .countdown-holder -->
+
+                        <div class="countdown-holder flex align-items-baseline">
+                          <label></label>
+                        </div>
+                        <!-- .countdown-holder -->
+
+                        <div class="countdown-holder flex align-items-baseline">
+                          <label></label>
+                        </div>
+                        <!-- .countdown-holder -->
+
+                        <div class="countdown-holder flex align-items-baseline">
+                          <label></label>
+                        </div>
+                        <!-- .countdown-holder -->
+                      </div>
+                      <!-- .countdown -->
+
+                      <!-- <h2 class="entry-title">1 We have the best events. <br>Get your tiket now!</h2> -->
+                    </div>
+                    <!--- .entry-header -->
+
+                    <div class="entry-footer " style="margin-left: 5000px;">
+                      <a class="btn gradient-bg" href="#">wefdes</a>
+                    </div>
+                    <!-- .entry-footer" -->
+                  </div>
+                  <!-- .col -->
+                </div>
+                <!-- .container -->
+              </div>
+              <!-- .hero-content -->
+            </div>
+            <!-- .swiper-slide -->
+          </div>
+          <!-- .swiper-wrapper -->
+        </div>
+
+        <div class="container" style="margin-top: -40px; position: relative; z-index: 999;">
+          <div id="countdown" style="display: flex; justify-content: center;">
+            <ul style="list-style: none; display: flex; padding: 0;">
+              <li style="background-color: white; border: 4px solid green; color: green; padding: 5px; margin: 5px; border-radius: 20px; font-weight: 1000;">
+                <span id="days"></span>days
+              </li>
+              <li style="background-color: white; border: 4px solid green; color: green; padding: 5px; margin: 5px; border-radius: 20px; font-weight: 1000;">
+                <span id="hours"></span>Hours
+              </li>
+              <li style="background-color: white; border: 4px solid green; color: green; padding: 5px; margin: 5px; border-radius: 20px; font-weight: 1000;">
+                <span id="minutes"></span> Minutes
+              </li>
+              <li style="background-color: white; border: 4px solid green; color: green; padding: 5px; margin: 5px; border-radius: 20px; font-weight: 1000;">
+                <span id="seconds"></span> Seconds
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        
+
+        <script>
+          (function () {
+            const second = 1000,
+              minute = second * 60,
+              hour = minute * 60,
+              day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+              dd = String(today.getDate()).padStart(2, "0"),
+              mm = String(today.getMonth() + 1).padStart(2, "0"),
+              yyyy = today.getFullYear(),
+              nextYear = yyyy + 1,
+              dayMonth = "02/16/",
+              birthday = dayMonth + yyyy;
+
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+              birthday = dayMonth + nextYear;
+            }
+            //end
+
+            const countDown = new Date(birthday).getTime(),
+              x = setInterval(function () {
+                const now = new Date().getTime(),
+                  distance = countDown - now;
+
+                (document.getElementById("days").innerText = Math.floor(
+                  distance / day
+                )),
+                  (document.getElementById("hours").innerText = Math.floor(
+                    (distance % day) / hour
+                  )),
+                  (document.getElementById("minutes").innerText = Math.floor(
+                    (distance % hour) / minute
+                  )),
+                  (document.getElementById("seconds").innerText = Math.floor(
+                    (distance % minute) / second
+                  ));
+
+                //do something later when date is reached
+                if (distance < 0) {
+                  document.getElementById("headline").innerText =
+                    "It's my birthday!";
+                  document.getElementById("countdown").style.display = "none";
+                  document.getElementById("content").style.display = "block";
+                  clearInterval(x);
+                }
+                //seconds
+              }, 0);
+          })();
+        </script>
+      </div>
+      <!-- .swiper-container -->
+    </header>
+    <!-- .site-header -->
+
+    <div class="container">
+      <div class="row" style="text-align: left;"> 
+
+        <div class="col-md-6 col-sm-12 col-lg-6 p-4">
+          <div  style="display: flex; align-items: flex-start;">
+            <span style="display: flex; flex-direction: column; align-items: center;">
+                <img src="images/icon_2.png" alt="Calendar Icon" width="50" height="50">
+            </span>
+            <h3 style="margin: 0; padding-left: 10px;">16, 17, 18, February 2024</h3>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-6 p-4">
+          <div  style="display: flex; align-items: flex-start;">
+            <span style="display: flex; flex-direction: column; align-items: center;">
+                <img src="images/icon_1.png" alt="Calendar Icon" width="50" height="50">
+            </span>
+            <h3 style="margin: 0; padding-left: 10px;">Vijaya International Convention Centre<br>Thiruvalla, Kerala, India</h3>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </div>
+
+    <div class="homepage-info-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-5">
+            <figure>
+              <img src="images/side.png" alt="logo" />
+            </figure>
+          </div>
+
+          <div class="col-12 col-md-8 col-lg-7">
+            <header class="entry-header">
+              <h3 class="entry-title">
+                Reimagine Business with Nostalgia Economy
+              </h3>
+            </header>
+
+            <div class="entry-content" style="text-align: justify;">
+              <p>
+                Central Chambers launces "Showcasing Keralam", an International Business Convention and Trade Fair reimagining Central Travancore Region's business landscape. It includes session on business, technology, start up, sustainable tourism, education, and regional development, promoting Kerala's global appeal and networking. <br><br>
+
+The event laps into the "nostalgia economy" of the diaspora, spotlighting NRKs from major Indian cities. It explores technology's borderless nature, especially AI's impact on remote work, e-commerce, and supplyt chains, with machinery expos, entertainment, food courts, and job fairs. <br><br>
+
+Emphasizing Institute-Industry-Interaction (Triple I) collaboration with MG University, it engages students through competitions, local business conferences, and partnerships. "Showcasing Keralam" Plans global expansion to faster mutual trade and business through editions in various countries and cities 
+              </p>
+            </div>
+
+            <!-- <footer class="entry-footer">
+              <a href="#" class="btn gradient-bg">Read More</a>
+              <a href="#" class="btn dark">Register Now</a>
+            </footer> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <h2 class="p-5 " style="
+        background: -webkit-linear-gradient(#ac9108, #058543);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;"><strong>എൻ്റെ കേരളം, ഏറെ അഭിവൃദ്ധിയിലേക്ക് <br> കൂടുതൽ ഉയരങ്ങളിലേക്ക് !!! </strong></h2>
+    </div>
+
+    
+
+   
+
+    <style>
+        /* Add the Poppins font style to the footer elements */
+        .site-footer {
+            font-family: 'Poppins',sans-serif ;
+            background: #00572e;
+        }
+        .site-footer h1,
+        .site-footer p,
+        .site-footer strong {
+            font-family: 'Poppins',sans-serif;
+        }
+    </style>
+
+    <footer class="site-footer" style="background: #00572e;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-lg-4 p-4 " >
+            <div style="display: inline-block; background: linear-gradient(to right, #058543, #ac9108);  border-radius: 50%;">
+                <img src="images/footer.jpg" alt="" style="border: 10px solid transparent; border-radius: 50%;">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-lg-4 p-4 text-white text-left" >
+            <h1 style="color: rgb(41, 142, 5); text-transform: none; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><strong>Be in Touch</strong></h1><br>
+            <p>Ph: +91 85477 53288</p>
+            <p>Email: info@showcasingkeralam.com</p>
+
+            <div class="mt-5">
+              <img src="images/facebook.png" alt="" width="50" height="50">
+              <img src="images/instagram.png" alt="" width="50" height="50">
+              <img src="images/linkedin.png" alt="" width="50" height="50">
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-12 col-lg-4 p-4 text-white" style="text-align: left;">
+            <p><strong>Central Travancore Chamber of Commerce and Industry</strong></p><br>
+
+            <p><strong>Head Office </strong><br>MACFAST, Thiruvalla, Kerala 689101</p><br>
+
+            <p><strong>Regional Office </strong><br>CC-31/1342 D2, Bhavani, Lal Salam Road <br>Vyttila P O, Cochin-682 019</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-4 " style="background-color: rgba(0, 0, 0, 0.05); color: rgb(155, 155, 155);">
+       Copyright © 2023 Central Travancore Chamber of Commerce and Industry. All Rights Reserved
+        <!-- <a class="text-reset fw-bold" href=""></a> -->
+      </div>
+    </footer>
+
+    <div class="back-to-top flex justify-content-center align-items-center">
+      <span
+        ><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1395 1184q0 13-10 23l-50 50q-10 10-23 10t-23-10l-393-393-393 393q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l466 466q10 10 10 23z"
+          /></svg
+      ></span>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/circle-progress.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>
