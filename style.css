@@ -233,7 +233,7 @@ a:hover, a:active {
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #00572e;
+    background: url('images/mobile-menu.jpg');
     transition: all 0.35s;
 }
 
