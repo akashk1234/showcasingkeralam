@@ -77,6 +77,11 @@
     font-size: calc(3.375rem * var(--smaller));
   }
 } */
+
+html * {
+  font-family: 'Poppins', sans-serif;
+
+}
     </style>
 
 <style>
@@ -88,10 +93,14 @@
   /* Mobile Styles */
   @media (max-width: 767px) {
   .swiper-slide {
-    background: url('images/.jpg') no-repeat;
+    background: url('images/mobile.png') no-repeat;
     background-size: cover;
+    height: 100%; /* Set the height to 100% to maintain aspect ratio */
   }
 }
+
+
+
 
 
   /* Desktop Styles */
@@ -105,11 +114,11 @@
 </style>
   </head>
 
-  <body>
-
+  
     <header class="site-header">
-
       
+      
+      <body>
       <div class="header-bar" style="margin-top: 50px;">
         <div class="container-fluid">
             <div class="row align-items-center">
@@ -133,7 +142,7 @@
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About us</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                         
                     </nav><!-- .site-navigation -->
@@ -300,7 +309,7 @@
             <span style="display: flex; flex-direction: column; align-items: center;">
                 <img src="images/icon_2.png" alt="Calendar Icon" width="50" height="50">
             </span>
-            <h3 style="margin: 0; padding-left: 10px;">16, 17, 18, February 2024</h3>
+            <h3 style="margin: 0; padding-left: 10px;"><strong>16, 17, 18, February 2024</strong></h3>
           </div>
         </div>
 
@@ -309,7 +318,7 @@
             <span style="display: flex; flex-direction: column; align-items: center;">
                 <img src="images/icon_1.png" alt="Calendar Icon" width="50" height="50">
             </span>
-            <h3 style="margin: 0; padding-left: 10px;">Vijaya International Convention Centre<br>Thiruvalla, Keralam, India</h3>
+            <h3 style="margin: 0; padding-left: 10px;"><strong>Vijaya International Convention Centre, <span style="color: gray;">Thiruvalla, Keralam, India</span></strong></h3>
           </div>
         </div>
         
@@ -414,8 +423,8 @@
           <div class="col-md-4 col-sm-12 col-lg-4 p-4 text-white text-left" >
             <h1 style="color: rgb(41, 142, 5); text-transform: none; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"><strong>Be in Touch</strong></h1><br>
             <p>Ph: +91 85477 53288</p>
-            <p>CEO: Lt. Jojoe Karippapparambil Jacob</p>
-            <p>Ph: +91 97450 54066 </p>
+            <p>CEO: Lt. Jojoe Karippapparambil Jacob <br> Ph: +91 97450 54066</p>
+            <p> </p>
             <p>Email: info@showcasingkeralam.com</p>
 
             <div class="mt-5">
