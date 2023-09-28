@@ -96,7 +96,7 @@ html * {
   /* Mobile Styles */
   @media (max-width: 767px) {
   .swiper-slide {
-    background: url('images/mobile-banner.jpg') no-repeat;
+    background: url('images/banner-mob.jpg') no-repeat;
     background-size: cover;
     height: 100%; /* Set the height to 100% to maintain aspect ratio */
   }
@@ -186,6 +186,7 @@ html * {
                           <label></label>
                         </div>
                         <!-- .countdown-holder -->
+                     
 
                         <div class="countdown-holder flex align-items-baseline">
                           <label></label>
@@ -211,6 +212,9 @@ html * {
                     <div class="entry-footer " style="margin-left: 5000px;">
                       <a class="btn gradient-bg" href="#">wefdes</a>
                     </div>
+                    
+                    
+                 
                     <!-- .entry-footer" -->
                   </div>
                   <!-- .col -->
@@ -307,14 +311,15 @@ html * {
     <div class="container">
       <div class="row" style="text-align: left;"> 
 
-        <div class="col-md-6 col-sm-12 col-lg-6 p-4 ">
-          <div  style="display: flex; align-items: flex-start;">
-            <span style="display: flex; flex-direction: column; align-items: center;">
-                <img src="images/icon_2.png" alt="Calendar Icon" width="50" height="50">
-            </span>
-            <h5 style="margin: 0; padding-left: 10px;"><strong>16, 17, 18, February 2024</strong></h5>
+        <div class="col-md-6 col-sm-12 col-lg-6 p-4">
+          <div style="display: flex; align-items: center; justify-content: left;">
+              <span style="display: flex; flex-direction: column; align-items: center;">
+                  <img src="images/icon_2.png" alt="Calendar Icon" width="50" height="50">
+              </span>
+              <h5 style="margin: 0; ;"><strong>&nbsp; 16, 17, 18, February 2024</strong></h5>
           </div>
-        </div>
+      </div>
+      
 
         <div class="col-md-6 col-sm-12 col-lg-6 p-4">
           <div  style="display: flex; align-items: flex-start;">
@@ -372,9 +377,20 @@ html * {
                  font-size: medium;
                }
              }
+             .entry-content{
+              text-align: left;
+             }
+
+             @media (max-width: 767px){
+              .entry-content{
+                text-align: center;
+              }
+             }
+
+             
             </style>
 
-            <div class="entry-content" style="text-align: left;">
+            <div class="entry-content">
               <p>
                 Central Chambers launches "Showcasing Keralam", an International Business Convention and Trade Fair reimagining Central Travancore Region's business landscape. It includes sessions on business, technology, start-ups, sustainable tourism, education, and regional development, promoting Kerala's global appeal, and networking.<br><br>
 
