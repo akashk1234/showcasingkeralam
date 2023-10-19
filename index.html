@@ -114,26 +114,45 @@ html * {
 
       }
   }
-</style>
-  </head>
+/* Default styles for desktop view */
+.desktop-menu {
+    display: block;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
 
   
-    <header class="site-header">
+</style>
+  </head>
+  
+  <body>
+      <header class="site-header">
+       
+        <div class="header-bar" style="margin-top: 50px;">
+          <div class="container-fluid">
+              <div class="row align-items-center">
+                  <div class="col-10 col-lg-2 order-lg-2">
+                      <div class="site-branding">
+                          <div class="site-title">
+                              <!-- <a href="#"><img src="images/" alt=""></a> -->
+                          </div><!-- .site-title -->
+                      </div><!-- .site-branding -->
+                  </div><!-- .col -->
       
-      
-      <body>
-      <div class="header-bar" style="margin-top: 50px;">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-10 col-lg-2 order-lg-2">
-                    <div class="site-branding">
-                        <div class="site-title">
-                            <!-- <a href="#"><img src="images/" alt=""></a> -->
-                        </div><!-- .site-title -->
-                    </div><!-- .site-branding -->
-                </div><!-- .col -->
-
-                <div class="col-2 col-lg-7 order-3 order-lg-3">
+                  <div class="col-2 col-lg-7 order-3 order-lg-3">
                     <nav class="site-navigation">
                         <div class="hamburger-menu d-lg-none">
                             <span></span>
@@ -141,34 +160,41 @@ html * {
                             <span></span>
                             <span></span>
                         </div><!-- .hamburger-menu -->
-
-                           <ul>
-                              <li><a href="#">Home</a></li>
-                              <li><a href="#about">About us</a></li>
-                              <li><a href="#">Agenda</a></li>
-                              <li><a href="#">Partners</a></li>
-                              <li><a href="contact.html">Contact</a></li>
-                            </ul>
-              
                         
-                    </nav><!-- .site-navigation -->
-                </div><!-- .col -->
-
-                <div class="col-lg-3 d-none d-lg-block order-2 order-lg-1">
-                    <div class="buy-tickets">
-                        <!-- <a class="btn gradient-bg" href="#">Buy Tickets</a> -->
-                    </div>
-                </div>
-
-
+                        <ul class="desktop-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#">Agenda</a></li>
+                        </ul>
+                        <ul class="desktop-menu">
+                          <li><a href="#partners">Partners</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
                 
-            </div><!-- .row -->
-        </div><!-- .container-fluid -->
-    </div>
-      
-      <!-- .header-bar -->
+                        <ul class="mobile-menu d-lg-none">
+                            <!-- Define your mobile menu links here -->
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="#">Contact</a></li>
 
-      </style>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+                </div>
+                
+                
+      
+                  <div class="col-lg-3 d-none d-lg-block order-2 order-lg-1">
+                      <div class="buy-tickets">
+                          <!-- <a class="btn gradient-bg" href="#">Buy Tickets</a> -->
+                      </div>
+                  </div>
+              </div><!-- .row -->
+          </div><!-- .container-fluid -->
+      </div>
+      
+      
 
       
       
@@ -440,6 +466,45 @@ html * {
           <strong>എൻ്റെ കേരളം, ഏറെ അഭിവൃദ്ധിയിലേക്ക് <br>കൂടുതൽ ഉയരങ്ങളിലേക്ക് !!!  </strong>
       </h2>
   </div>
+
+  <style>
+    @media (max-width: 767px) {
+        .fixed-height {
+            height: 200px; /* Set your desired fixed height for mobile here */
+        }
+    }
+</style>
+
+<div class="container partner-image" id="partners">
+  <h3>Our Partners</h3>
+    <div class="row justify-content-center">
+        <div class="col-sm-6 col-lg-3 mt-3 prtner-card d-flex align-items-center justify-content-center fixed-height">
+            <img class="prtner-img" src="images/kerala-govt.png" alt="">
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-3 prtner-card d-flex align-items-center justify-content-center p-4 fixed-height">
+            <img class="prtner-img" src="images/ksidc-logo.png" alt="">
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-3 prtner-card d-flex align-items-center justify-content-center fixed-height">
+            <img class="prtner-img" src="images/digital-university.png" alt="">
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-6 col-lg-3 mt-3 prtner-card d-flex align-items-center justify-content-center fixed-height">
+            <img class="prtner-img" src="images/kmtc.png" alt="">
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-3 prtner-card d-flex align-items-center justify-content-center fixed-height">
+            <img class="prtner-img" src="images/maker-village.png" alt="">
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-3 prtner-card d-flex align-items-center justify-content-center fixed-height">
+            <img class="prtner-img" src="images/kerala-startup-mission.png" alt="">
+        </div>
+        <div class="col-sm-6 col-lg-3 mt-3 prtner-card d-flex align-items-center justify-content-center fixed-height">
+            <img class="prtner-img" src="images/k-disc.png" alt="">
+        </div>
+    </div>
+</div>
+
+
 
     <footer class="site-footer" style="background: linear-gradient(90deg, rgba(0,80,42,1) 0%, rgba(0,153,81,1) 100%);">
       <div class="container">
